@@ -1,3 +1,4 @@
+
 {
 	"schemaVersion": 1,
 	"id": "dinosaurmod",
@@ -18,9 +19,6 @@
 		"main": [
 			"net.damrongmc.dinosaurmod.DinosaurMod"
 		],
-		"fabric-datagen": [
-			"net.damrongmc.dinosaurmod.DinosaurModDataGenerator"
-		],
 		"client": [
 			"net.damrongmc.dinosaurmod.DinosaurModClient"
 		]
@@ -33,8 +31,5 @@
 		"minecraft": "~1.21.5",
 		"java": ">=21",
 		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
 	}
 }
