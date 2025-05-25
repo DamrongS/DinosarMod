@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "dinosaurmod",
+	"version": "${version}",
+	"name": "Dinosaur Mod",
+	"description": "Adds your very own dinosaur pets",
+	"authors": [
+		"DamrongMc"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/dinosaur-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.damrongmc.dinosaurmod.DinosaurMod"
+		],
+		"fabric-datagen": [
+			"net.damrongmc.dinosaurmod.DinosaurModDataGenerator"
+		],
+		"client": [
+			"net.damrongmc.dinosaurmod.DinosaurModClient"
+		]
+	},
+	"mixins": [
+		"dinosaur-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
