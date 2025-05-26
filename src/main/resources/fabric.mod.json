@@ -13,7 +13,7 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/dinosaurmod/icon.png",
+	"icon": "assets/dinosaur-mod/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
@@ -24,7 +24,7 @@
 		]
 	},
 	"mixins": [
-		"dinosaur-mod.mixins.json"
+		"dinosaurmod.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.16.14",

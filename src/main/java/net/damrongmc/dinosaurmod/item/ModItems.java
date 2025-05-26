@@ -12,6 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item VELOCIRAPTOR_CLAW = registerItem("velociraptor_claw", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(DinosaurMod.MOD_ID,"velociraptor_claw")))));
+    public static final Item FOSSILIZEDVELOCIRAPTOR_CLAW = registerItem("fossilized_velociraptor_claw", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(DinosaurMod.MOD_ID,"fossilized_velociraptor_claw")))));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(DinosaurMod.MOD_ID, name), item);
@@ -23,6 +24,7 @@ public class ModItems {
         //Ingredients item group
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(VELOCIRAPTOR_CLAW);
+            entries.add(FOSSILIZEDVELOCIRAPTOR_CLAW);
         });
     }
 }
